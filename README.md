@@ -6,38 +6,9 @@ Various factors on the road can endanger the safety of drivers or pedestrians an
 
 # Install
 
-## ViLT Transformer
+## Ultralytics
 
-!pip install -q git+https://github.com/huggingface/transformers.git
-
-## sklearn version 1.6.0
-
-!pip install scikit-learn==1.6.0
-
-## open clip version 2.26.1
-
-!pip install open_clip_torch==2.26.1
-
-## More libraries
-
-jupyterlab
-
-numpy
-
-pandas
-
-pillow
-
-scikit-image
-
-struct
-
-tensorflow
-
-timm
-
-torch
-
+!pip install ultralytics --upgrade
 
 # Download
 
@@ -52,7 +23,7 @@ https://drive.google.com/drive/folders/15vN2240gHq5qkaYTZNfmcGjpKzqBZh_b?usp=sha
 !pip install -r requirements.txt
 
 
-# Create the fil yalm for train the model
+# Create the .yalm file for train the model
 
 ```python
 dataset_yaml = f"""
