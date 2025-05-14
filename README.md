@@ -65,7 +65,7 @@ dataset/
 ## Train the model
 
 
-# Training
+# Training YOLOv5
 
 ```python
 
