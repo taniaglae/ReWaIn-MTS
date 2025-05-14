@@ -50,11 +50,13 @@ print(" File custom_dataset.yaml saved.")
 
 ## Train the model
 
-from yolov5 import train, val
 
 # Training
 
 ```python
+
+from yolov5 import train, val
+
 train.run(
     data='custom_dataset.yaml',    
     imgsz=640,
