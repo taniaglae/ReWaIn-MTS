@@ -37,6 +37,20 @@ with open(f"{base_path}/custom_dataset.yaml", "w") as f:
 print(" File custom_dataset.yaml saved.")
 ```
 
+# Dataset files structure
+
+```python
+dataset/
+├── images/
+│   ├── train/
+│   ├── val/
+│   ├── test/
+├── labels/
+│   ├── train/
+│   ├── val/
+│   ├── test/
+├── custom_dataset.yaml
+```
 
 # For YOLOv5
 
