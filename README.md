@@ -17,11 +17,13 @@ Various factors on the road can endanger the safety of drivers or pedestrians an
 https://drive.google.com/drive/folders/15vN2240gHq5qkaYTZNfmcGjpKzqBZh_b?usp=sharing
 
 ## For YOLOv5
-
+```python
 !!git clone https://github.com/ultralytics/yolov5
-%cd yolov5
-!pip install -r requirements.txt
 
+%cd yolov5
+
+!pip install -r requirements.txt
+```
 
 # Create the .yalm file for train the model
 
