@@ -16,16 +16,6 @@ Various factors on the road can endanger the safety of drivers or pedestrians an
 
 https://drive.google.com/drive/folders/15vN2240gHq5qkaYTZNfmcGjpKzqBZh_b?usp=sharing
 
-## For YOLOv5
-
-```python
-!!git clone https://github.com/ultralytics/yolov5
-
-%cd yolov5
-
-!pip install -r requirements.txt
-```
-
 # Create the .yalm file for train the model
 
 ```python
@@ -45,5 +35,16 @@ with open(f"{base_path}/custom_dataset.yaml", "w") as f:
     f.write(dataset_yaml)
 
 print(" File custom_dataset.yaml saved.")
+```
+
+
+## For YOLOv5
+
+```python
+!!git clone https://github.com/ultralytics/yolov5
+
+%cd yolov5
+
+!pip install -r requirements.txt
 ```
 
