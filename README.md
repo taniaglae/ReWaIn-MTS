@@ -48,3 +48,29 @@ print(" File custom_dataset.yaml saved.")
 !pip install -r requirements.txt
 ```
 
+## Train the model
+
+from yolov5 import train, val
+
+# Training
+
+```python
+train.run(
+    data='custom_dataset.yaml',    
+    imgsz=640,
+    batch=16,
+    epochs=100,
+    weights='yolov5s.pt',
+    project='runs/train',
+    name='yolo37_custom',
+    exist_ok=True
+)
+
+# Validation
+val.run(
+    data='custom_dataset.yaml',
+    weights='runs/train/yolo37_custom/weights/best.pt',
+    imgsz=640,
+    batch=16
+)
+```
