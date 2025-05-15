@@ -52,7 +52,7 @@ dataset/
 ├── custom_dataset.yaml
 ```
 
-# For YOLOv5
+# YOLOv5
 
 ```python
 !!git clone https://github.com/ultralytics/yolov5
@@ -62,10 +62,7 @@ dataset/
 !pip install -r requirements.txt
 ```
 
-## Train the model
-
-
-# Training YOLOv5
+## Training YOLOv5
 
 ```python
 
@@ -91,7 +88,7 @@ val.run(
 )
 ```
 
-# Testing YOLOv5 
+## Testing YOLOv5 
 
 ```python
 import torch
@@ -117,4 +114,33 @@ print(f"mAP@0.5: {mAP_0_5}")
 print(f"mAP@0.5:0.95: {mAP_0_5_95}")
 print(f"Precision: {precision}")
 print(f"Recall: {recall}")
+```
+
+# YOLOv8
+
+```python
+from ultralytics import YOLO
+
+model = YOLO('yolov8s.pt')
+```
+
+## Training YOLOv8
+
+```python
+model.train(
+    data='/Users/taniaglae/Documents/VIIS-mac/trafico/ReWaIn/custom_dataset.yaml',
+    imgsz=640,
+    epochs=100,
+    batch=16,
+    project='runs/train',
+    name='yolo8_custom',
+    exist_ok=True
+)
+
+model = YOLO('runs/train/yolo8_custom/weights/best.pt')
+model.val(
+    data='/Users/taniaglae/Documents/VIIS-mac/trafico/ReWaIn/custom_dataset.yaml',
+    imgsz=640,
+    batch=16
+)
 ```
