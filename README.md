@@ -16,7 +16,7 @@ Various factors on the road can endanger the safety of drivers or pedestrians an
 
 https://drive.google.com/drive/folders/15vN2240gHq5qkaYTZNfmcGjpKzqBZh_b?usp=sharing
 
-# Create the .yalm file for train the model
+# Create the .yalm file 
 
 ```python
 dataset_yaml = f"""
