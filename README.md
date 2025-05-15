@@ -128,7 +128,7 @@ model = YOLO('yolov8s.pt')
 
 ```python
 model.train(
-    data='/Users/taniaglae/Documents/VIIS-mac/trafico/ReWaIn/custom_dataset.yaml',
+    data='custom_dataset.yaml',
     imgsz=640,
     epochs=100,
     batch=16,
@@ -139,7 +139,7 @@ model.train(
 
 model = YOLO('runs/train/yolo8_custom/weights/best.pt')
 model.val(
-    data='/Users/taniaglae/Documents/VIIS-mac/trafico/ReWaIn/custom_dataset.yaml',
+    data='custom_dataset.yaml',
     imgsz=640,
     batch=16
 )
