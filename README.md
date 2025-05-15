@@ -90,3 +90,31 @@ val.run(
     batch=16
 )
 ```
+
+# Testing YOLOv5 
+
+```python
+import torch
+from yolov5 import val
+
+results = val.run(
+    data='custom_dataset.yaml',
+    weights='runs/train/yolo37_custom/weights/best.pt',
+    imgsz=640,
+    batch_size=16,
+    task='detect',
+    half=False  
+)
+
+metrics_general = results[0]
+
+mAP_0_5 = metrics_general[0]
+mAP_0_5_95 = metrics_general[1]
+precision = metrics_general[2]
+recall = metrics_general[3]
+
+print(f"mAP@0.5: {mAP_0_5}")
+print(f"mAP@0.5:0.95: {mAP_0_5_95}")
+print(f"Precision: {precision}")
+print(f"Recall: {recall}")
+```
