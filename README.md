@@ -144,3 +144,16 @@ model.val(
     batch=16
 )
 ```
+
+## Testing YOLOv8 
+
+```python
+model = YOLO('runs/train/yolo8_custom/weights/best.pt')
+
+metrics = model.val(data='custom_dataset.yaml', split='test')
+
+print(f"mAP@0.5:      {metrics.box.map50:.6f}")
+print(f"mAP@0.5:0.95: {metrics.box.map:.6f}")
+print(f"Precisión:    {metrics.box.precision:.6f}")
+print(f"Recall:       {metrics.box.recall:.6f}")
+```
