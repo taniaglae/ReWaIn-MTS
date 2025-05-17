@@ -154,3 +154,43 @@ metrics = model.val(data='custom_dataset.yaml', split='test')
 print(f"mAP@0.5:      {metrics.box.map50:.6f}")
 print(f"mAP@0.5:0.95: {metrics.box.map:.6f}")
 ```
+
+# YOLOv11
+
+```python
+from ultralytics import YOLO
+
+model = YOLO('yolov11n.pt')
+```
+
+## Training YOLOv11
+
+```python
+model.train(
+    data='custom_dataset.yaml',
+    imgsz=640,
+    epochs=100,
+    batch=16,
+    project='runs/train',
+    name='yolo11_custom',
+    exist_ok=True
+)
+
+model = YOLO('runs/train/yolo11_custom/weights/best.pt')
+model.val(
+    data='custom_dataset.yaml',
+    imgsz=640,
+    batch=16
+)
+```
+
+## Testing YOLOv11 
+
+```python
+model = YOLO('runs/train/yolo11_custom/weights/best.pt')
+
+metrics = model.val(data='custom_dataset.yaml', split='test')
+
+print(f"mAP@0.5:      {metrics.box.map50:.6f}")
+print(f"mAP@0.5:0.95: {metrics.box.map:.6f}")
+```
