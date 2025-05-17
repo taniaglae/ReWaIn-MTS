@@ -1,6 +1,6 @@
 # ReWaIn-MTS
 Toward a new dataset: Mexican Traffic Signs “ReWaIn-MTS” for detection
-
+Daniela Bolaños-Flores, Tania Aglae Ramirez-delreal, Hamurabi Gamboa-Rosales, Guadalupe O. Gutierrez-Esparza
 
 Various factors on the road can endanger the safety of drivers or pedestrians and cause high-impact accidents while driving. This is why traffic signs, as essential elements, provide crucial information on the condition of the road during the trip. We introduce the ReWaIn-MTS dataset, a practical tool that can support and advance research on traffic sign detection and classification in Mexico. Its applications are theoretical and have implications in the real world in autonomous conduction or assist driving. Convolutional neural networks (CNNs) have shown outstanding detection results compared to conventional methods. In this work, we used CNN-based machine learning techniques to categorize and detect Mexican traffic signs. The dataset, focused on traffic signs on the Mexican territory within the main urban roads in eight different cities, contains 2,283 road elements divided into 37 classes to train and validate algorithms. 
 
