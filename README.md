@@ -109,13 +109,10 @@ metrics_general = results[0]
 
 mAP_0_5 = metrics_general[0]
 mAP_0_5_95 = metrics_general[1]
-precision = metrics_general[2]
-recall = metrics_general[3]
 
 print(f"mAP@0.5: {mAP_0_5}")
 print(f"mAP@0.5:0.95: {mAP_0_5_95}")
-print(f"Precision: {precision}")
-print(f"Recall: {recall}")
+
 ```
 
 # YOLOv8
@@ -156,6 +153,4 @@ metrics = model.val(data='custom_dataset.yaml', split='test')
 
 print(f"mAP@0.5:      {metrics.box.map50:.6f}")
 print(f"mAP@0.5:0.95: {metrics.box.map:.6f}")
-print(f"Precisión:    {metrics.box.precision:.6f}")
-print(f"Recall:       {metrics.box.recall:.6f}")
 ```
