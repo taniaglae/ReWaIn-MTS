@@ -204,7 +204,7 @@ from ultralytics import RTDETR
 model = RTDETR("rtdetr-l.pt")
 ```
 
-## Training YOLOv11
+## Training RTDETR
 
 ```python
 model.train(
@@ -219,7 +219,7 @@ model.train(
 )
 ```
 
-## Testing YOLOv11 
+## Testing RTDETR 
 
 ```python
 
