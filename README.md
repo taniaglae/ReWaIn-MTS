@@ -187,7 +187,43 @@ model.val(
 ## Testing YOLOv11 
 
 ```python
+
 model = YOLO('runs/train/yolo11_custom/weights/best.pt')
+
+metrics = model.val(data='custom_dataset.yaml', split='test')
+
+print(f"mAP@0.5:      {metrics.box.map50:.6f}")
+print(f"mAP@0.5:0.95: {metrics.box.map:.6f}")
+```
+
+# RTDETR
+
+```python
+from ultralytics import RTDETR
+
+model = RTDETR("rtdetr-l.pt")
+```
+
+## Training YOLOv11
+
+```python
+model.train(
+
+    data='custom_dataset.yaml',
+    imgsz=640,
+    epochs=100,
+    batch=16,
+    project='runs/train',
+    name='rtdetr',
+    exist_ok=True
+)
+```
+
+## Testing YOLOv11 
+
+```python
+
+model = RTDETR('runs/train/rtdetr/weights/best.pt')
 
 metrics = model.val(data='custom_dataset.yaml', split='test')
 
