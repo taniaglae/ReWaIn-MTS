@@ -1,8 +1,15 @@
 # ReWaIn-MTS
 
-## Toward a new dataset: Mexican Traffic Signs “ReWaIn-MTS” for detection
+## Toward a new dataset: Mexican Traffic Signs “ReWaIn-MTS” for detection (9614- IEEE Latin America Transactions)
 
-## Daniela Bolaños-Flores, Tania Aglae Ramirez-delreal, Hamurabi Gamboa-Rosales, Guadalupe O. Gutierrez-Esparza
+
+## Daniela Bolaños-Flores, Tania Ramirez-delreal, Hamurabi Gamboa-Rosales, Guadalupe O. Gutierrez-Esparza
+
+### Daniela Bolaños-Flores is with Universidad Autónoma de Zacatecas, Zacatecas. Mexico. (e-mail: 42106547@uaz.edu.mx). 
+### Tania Ramirez-delreal is with Secretaría de Ciencia, Humanidades, Tecnología e Innovación (SECIHTI) and with Centro de Investigación en Ciencias de Información Geoespacial (CentroGeo), Aguascalientes, Mexico. (e-mail: tramirez@centrogeo.edu.mx, corresponding author).
+### Hamurabi Gamboa Rosales is with Universidad Autónoma de Zacatecas, Zacatecas. Mexico. (e-mail: hamurabigr@uaz.edu.mx).
+### Guadalupe Gutierrez-Esparza is with Secretaría de Ciencia, Humanidades, Tecnología e Innovación (SECIHTI) and with Clinical Research, National Institute of Cardiology 'Ignacio Chávez', Mexico City. Mexico. (e-mail: ggutierreze@secihti.mx).
+
 
 Various factors on the road can endanger the safety of drivers or pedestrians and cause high-impact accidents while driving. This is why traffic signs, as essential elements, provide crucial information on the condition of the road during the trip. We introduce the ReWaIn-MTS dataset, a practical tool that can support and advance research on traffic sign detection and classification in Mexico. Its applications are theoretical and have implications in the real world in autonomous conduction or assist driving. Convolutional neural networks (CNNs) have shown outstanding detection results compared to conventional methods. In this work, we used CNN-based machine learning techniques to categorize and detect Mexican traffic signs. The dataset, focused on traffic signs on the Mexican territory within the main urban roads in eight different cities, contains 2,283 road elements divided into 37 classes to train and validate algorithms. 
 
